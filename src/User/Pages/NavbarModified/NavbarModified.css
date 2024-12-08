@@ -1,0 +1,21 @@
+.navbarModified {
+    .navbarWrapper {
+        background-color: white;
+        padding: 10px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .cartifyLogo {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+        }
+h1{
+    position: relative;
+    right: 60%;
+}
+        
+    }
+}

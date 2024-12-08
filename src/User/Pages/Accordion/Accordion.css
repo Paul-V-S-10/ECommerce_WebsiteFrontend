@@ -1,0 +1,67 @@
+.accordion-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    .accordion {
+        flex: 1;
+        margin-right: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .section {
+        border-top: 1px solid #ccc;
+    }
+    
+    .section-header {
+        padding: 16px;
+        cursor: pointer;
+        background-color: #f9f9f9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    .section-header:hover {
+        background-color: #e0e0e0;
+    }
+    
+    .section.active .section-header {
+        background-color: #d0ebff; /* Change this color to your preference */
+    }
+    
+    .section-number {
+        margin-right: 8px;
+        font-weight: bold;
+    }
+    
+    .section-form {
+        padding: 16px;
+        background-color: #fff;
+    }
+    
+    .form-group {
+        margin-bottom: 16px;
+    }
+    
+    button {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .tick-mark {
+        color: green;
+        font-size: 18px;
+    }
+}

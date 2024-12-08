@@ -1,0 +1,21 @@
+.payment-details {
+    width: 300px;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .payment-info {
+    margin-top: 16px;
+  }
+  
+  .payment-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .total-amount {
+    font-weight: bold;
+  }

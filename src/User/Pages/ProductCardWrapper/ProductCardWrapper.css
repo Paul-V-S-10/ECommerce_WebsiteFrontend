@@ -1,0 +1,75 @@
+.product-card-wrapper-container {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    .category-heading {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .product-card-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 50px; /* Add some padding at the top to accommodate the heading */
+    }
+    
+    .product-slider {
+        display: flex;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory; /* Optional: Enables snap scrolling */
+    }
+    
+    .product-slider::-webkit-scrollbar {
+        display: none; /* Hide scrollbar */
+    }
+    
+    .scroll-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        z-index: 1;
+        padding: 10px;
+    }
+    
+    .scroll-button.left {
+        left: 0;
+        top: 150px
+    }
+    
+    .scroll-button.right {
+        top: 150px;
+        right: 2px;
+    }
+    
+    /* Adjust the product card to fit the slider */
+    .product-card {
+        min-width: 300px; /* Adjust minimum width as needed */
+        margin-right: 10px; /* Adjust margin between cards */
+        height: 200px; /* Adjust card height */
+    }
+    
+    .product-card:last-child {
+        margin-right: 0; /* Remove margin from the last card */
+    }
+    
+}
+    @media screen and (max-width: 768px) {
+        .product-card {
+            min-width: 200px; /* Example: Reduce minimum width for smaller screens */
+            height: 150px; /* Example: Adjust card height for smaller screens */
+        }
+    }

@@ -1,0 +1,81 @@
+
+.carousel {
+    position: relative;
+    width:100%;
+    /* max-width: 600px; */
+    margin: auto;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 10px; */
+    
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    
+    .carousel-item {
+      min-width: 100%;
+      transition: opacity 1s ease;
+      opacity: 0;
+      display: none;
+    }
+    
+    .carousel-item.active {
+      opacity: 1;
+      display: block;
+    }
+    
+    .carousel-item img {
+      width: 100%;
+      /* border-radius: 10px; */
+      /* filter: brightness(80%) contrast(120%) saturate(70%); */
+    }
+    
+    .left-arrow,
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      /* color: #ffffff80; */
+      color: rgba(50, 50, 50, 0.429);
+      cursor: pointer;
+      background-color: transparent;
+      background-color: rgba(115, 115, 115, 0.5);
+      padding: 5px;
+      border-radius: 3px;
+      user-select: none;
+      transition: color 0.2s ease;
+      transition: font-size 0.2s ease;
+    }
+    .left-arrow:hover,.right-arrow:hover{
+      /* color: #f1f1f1; */
+      color: #f1f1f1;
+    }
+    
+    .left-arrow {
+      /* left: 10px; */
+    }
+    
+    .right-arrow {
+      right: 0px;
+    }
+    
+    .progress-bar {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .progress {
+      height: 100%;
+      background-color: #7f7f7f;
+      transition: width 0.1s ease;
+    }
+  }
